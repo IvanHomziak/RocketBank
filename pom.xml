@@ -20,6 +20,7 @@
 
     <modules>
         <module>accounts</module>
+        <module>cards</module>
     </modules>
 
     <url/>
