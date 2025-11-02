@@ -20,7 +20,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
                 description = "RocketBank Cards microservice REST API Documentation",
                 version = "v1",
                 contact = @Contact(
-                        name = "Madan Reddy",
+                        name = "John Roe",
                         email = "tutor@gmail.com",
                         url = "https://www.ihomziak.com"
                 ),

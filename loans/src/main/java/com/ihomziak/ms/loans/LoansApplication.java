@@ -15,28 +15,28 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EntityScan("com.ihomziak.loans.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
-		info = @Info(
-				title = "Loans microservice REST API Documentation",
-				description = "RocketBank Loans microservice REST API Documentation",
-				version = "v1",
-				contact = @Contact(
-						name = "Madan Reddy",
-						email = "tutor@gmail.com",
-						url = "https://www.ihomziak.com"
-				),
-				license = @License(
-						name = "Apache 2.0",
-						url = "https://www.ihomziak.com"
-				)
-		),
-		externalDocs = @ExternalDocumentation(
-				description = "RocketBank Loans microservice REST API Documentation",
-				url = "https://www.ihomziak.com/swagger-ui.html"
-		)
+        info = @Info(
+                title = "Loans microservice REST API Documentation",
+                description = "RocketBank Loans microservice REST API Documentation",
+                version = "v1",
+                contact = @Contact(
+                        name = "Ivan Homziak",
+                        email = "tutor@gmail.com",
+                        url = "https://www.ihomziak.com"
+                ),
+                license = @License(
+                        name = "Apache 2.0",
+                        url = "https://www.ihomziak.com"
+                )
+        ),
+        externalDocs = @ExternalDocumentation(
+                description = "RocketBank Loans microservice REST API Documentation",
+                url = "https://www.ihomziak.com/swagger-ui.html"
+        )
 )
 public class LoansApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LoansApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(LoansApplication.class, args);
+    }
 }

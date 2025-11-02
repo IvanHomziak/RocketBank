@@ -30,7 +30,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
                 )
         ),
         externalDocs = @ExternalDocumentation(
-                description =  "RocketBank Accounts microservice REST API Documentation",
+                description = "RocketBank Accounts microservice REST API Documentation",
                 url = "https://www.ihomziak.com/swagger-ui.html"
         )
 )

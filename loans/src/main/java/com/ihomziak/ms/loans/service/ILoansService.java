@@ -13,7 +13,7 @@ public interface ILoansService {
     /**
      *
      * @param mobileNumber - Input mobile Number
-     *  @return Loan Details based on a given mobileNumber
+     * @return Loan Details based on a given mobileNumber
      */
     LoansDto fetchLoan(String mobileNumber);
 

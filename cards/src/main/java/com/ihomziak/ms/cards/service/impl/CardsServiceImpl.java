@@ -25,9 +25,9 @@ public class CardsServiceImpl implements ICardsService {
      */
     @Override
     public void createCard(String mobileNumber) {
-        Optional<Cards> optionalCards= cardsRepository.findByMobileNumber(mobileNumber);
-        if(optionalCards.isPresent()){
-            throw new CardAlreadyExistsException("Card already registered with given mobileNumber "+mobileNumber);
+        Optional<Cards> optionalCards = cardsRepository.findByMobileNumber(mobileNumber);
+        if (optionalCards.isPresent()) {
+            throw new CardAlreadyExistsException("Card already registered with given mobileNumber " + mobileNumber);
         }
         cardsRepository.save(createNewCard(mobileNumber));
     }
@@ -72,7 +72,7 @@ public class CardsServiceImpl implements ICardsService {
                 () -> new ResourceNotFoundException("Card", "CardNumber", cardsDto.getCardNumber()));
         CardsMapper.mapToCards(cardsDto, cards);
         cardsRepository.save(cards);
-        return  true;
+        return true;
     }
 
     /**
